@@ -1,17 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//15)Escreva os números de 1 (inclusive) a 10 (inclusive) em ordem crescente.
+//15)Escreva os nÃºmeros de 1 (inclusive) a 10 (inclusive) em ordem crescente.
 
 int main()
 {
     int n;
-    n=1;
 
-    while(n<=10)
+    for(n=1;n<=10;n++)
     {
         printf("%i\n",n);
-        n++;
     }
     return 0;
 }
+

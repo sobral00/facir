@@ -1,19 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*12)	Ler a descriÁ„o do produto (nome), a quantidade adquirida e o preÁo unit·rio. Calcular e
-/escrever o total (total = quantidade adquirida * preÁo unit·rio), o desconto e o total a pagar
+/*12)	Ler a descri√ß√£o do produto (nome), a quantidade adquirida e o pre√ßo unit√°rio. Calcular e
+/escrever o total (total = quantidade adquirida * pre√ßo unit√°rio), o desconto e o total a pagar
 /(total a pagar = total - desconto), sabendo-se que:
-/-	Se quantidade <= 5 o desconto ser· de 2%
-/- 	Se quantidade > 5 e quantidade <=10 o desconto ser· de 3%
-/-	Se quantidade > 10 o desconto ser· de 5%
+/-	Se quantidade <= 5 o desconto ser√° de 2%
+/- 	Se quantidade > 5 e quantidade <=10 o desconto ser√° de 3%
+/-	Se quantidade > 10 o desconto ser√° de 5%
 */
 
 int main()
 {
 
     char nome[15];
-    float pu,t,tp;
+    float pu,t,tp,e;
     int qa;
 
     printf("Insira o nome do produto: \n");
@@ -24,18 +24,21 @@ int main()
     if (qa<=5)
     {
         tp=t-t*0.02;
-        printf("Produto: %s.\nQuantidade: %i.\n",nome,qa);
-        printf("O total foi de %.2f reais,mas,voce teve um desconto de 2%%, o preco final sera de %.2f reais. \n",t,tp);
+        e=t-tp;
+        printf("Produto: %s\nQuantidade: %i\n",nome,qa);
+        printf("Preco total: %.2f reais\nDesconto: 2%%\nEconomia: %.2f reais\nPreco final: %.2f reais \n",t,e,tp);
     }else{
     if (qa>10)
     {
         tp=t-t*0.05;
-        printf("Produto: %s.\nQuantidade: %i.\n",nome,qa);
-        printf("O total foi de %.2f reais, mas,voce teve um desconto de 5%%, o preco final sera de %.2f reais. \n",t,tp);
+        e=t-tp;
+        printf("Produto: %s\nQuantidade: %i\n",nome,qa);
+        printf("Preco total: %.2f reais\nDesconto: 5%%\nEconomia: %.2f reais\nPreco final: %.2f reais \n",t,e,tp);
     }else{
         tp=t-t*0.03;
-        printf("Produto: %s.\nQuantidade: %i.\n",nome,qa);
-        printf("O total foi de %.2f reais, mas,voce teve um desconto de 3%%, o preco final sera de %.2f reais. \n",t,tp);
+        e=t-tp;
+        printf("Produto: %s\nQuantidade: %i\n",nome,qa);
+        printf("Preco total: %.2f reais\nDesconto: 3%%\nEconomia: %.2f reais\nPreco final: %.2f reais \n",t,e,tp);
     }
 
 }

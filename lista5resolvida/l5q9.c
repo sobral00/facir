@@ -6,12 +6,10 @@ int main()
 {
     int v1,v2,r;
     v1 = 8;
-    v2 = 1;
 
-    while(v2 <= 10){
+    for(v2=1;v2<= 10;v2++){
     r = v1 * v2;
-    printf("%i * %i = %i\n",v1,v2,r);
-    v2++;
+    printf("%i x %i = %i\n",v1,v2,r);
     }
 
     return 0;

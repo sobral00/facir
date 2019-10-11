@@ -15,5 +15,5 @@ void main() {
   }
   printf(" ");
   }
-  printf("\nSeu codigo em binario tem %d 1's.",c);
+  printf("\nSua string em codigo binario tem %d 1's.",c);
 }

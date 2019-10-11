@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+void main() {
   char nome[20];
   int i,b;
   int c=0;
@@ -16,5 +16,4 @@ int main() {
   printf(" ");
   }
   printf("\nSeu codigo em binario tem %d 1's.",c);
-  return 0;
 }

@@ -9,7 +9,8 @@ int idade;
 }Tlista;
 
 Tlista pessoa[10];
-int media,y=0,z=0;
+int y=0,z=0;
+float media;
 
     for(int x=0;x<9;x++){
     printf("Insira seu primeiro nome: ");
@@ -18,7 +19,7 @@ int media,y=0,z=0;
     printf("Insira sua idade: ");
     scanf("%d",&pessoa[x].idade);
     setbuf(stdin,NULL);
-        if(pessoa[x].idade < 0 ) break; else if(media>pessoa[x].idade) y+=pessoa[x].idade; z+=1;
+        if(pessoa[x].idade < 0 ) break; else y+=pessoa[x].idade; z+=1;
     }
 
 media=y/z;
@@ -36,4 +37,3 @@ for(int x=0;x<z;x++){
         }
     }
 }
-
